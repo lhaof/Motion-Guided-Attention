@@ -7,4 +7,4 @@ tar -zxvf FBMS-SaliencyMap.tar.gz
 tar -zxvf ViSal-SaliencyMap.tar.gz
 ```
 
-1. If you want to run our trained MGA network, first, you need to correctly install FlowNet 2.0. The performance of our method could be affected by the quality of optical flow images. 
+1. If you want to run our trained MGA network, first, you need to correctly install FlowNet 2.0. The performance of our method could be affected by the quality of optical flow images. Notice that FlowNet 2.0 contains many variants, please choose the one with the highest accuracy. 
