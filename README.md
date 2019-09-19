@@ -18,3 +18,5 @@ tar -zxvf ViSal-SaliencyMap.tar.gz
 python inference.pth
 ```
 The above command should generates a new directory named './results'. The command should also predict a saliency map, since we have put an input sample in './dataset'.
+
+4. If you want to train our method from scratch, please read the proposed multi-task training scheme in our paper carefully. And then implement your own training code. If you feel this repository helpful, please cite our paper.
