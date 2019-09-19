@@ -152,8 +152,6 @@ def flow_to_image(flow):
     :param flow: optical flow map
     :return: optical flow image in middlebury color
     """
-    import time
-    t0 = time.time()
     u = flow[:, :, 0]
     v = flow[:, :, 1]
 
@@ -181,18 +179,12 @@ def flow_to_image(flow):
 
     u = u/(maxrad + np.finfo(float).eps)
     v = v/(maxrad + np.finfo(float).eps)
-    t1 = time.time()
-    # print('t1-t0: %.4f'%(t1-t0))
 
     img = compute_color(u, v)
-    t2 = time.time()
-    # print('t2-t1: %.4f'%(t2-t1))
 
     idx = np.repeat(idxUnknow[:, :, np.newaxis], 3, axis=2)
     img[idx] = 0
     res = np.uint8(img)
-    t3 = time.time()
-    # print('t3-t2: %.4f'%(t3-t2)) 
     
     return res 
     # return np.uint8(img)
