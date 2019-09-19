@@ -12,3 +12,5 @@ tar -zxvf ViSal-SaliencyMap.tar.gz
 1-1. Be careful about the input order of video frames that are used for flow estimation. It is better to transform the input frames into the same shape as the training samples of FlowNet 2.0. Visualize optical flows and transform them into RGB images.
 
 2. Have a look at the directory './dataset', and you will know how the data is organized. Create new sub-directory for your own dataset, and place RGB images and visualized optical flows under the corresponding directory. You may also read and modify 'dataloaders' according to how you organize the data.
+
+3. Download our trained model weights 'MGA_trained.pth'. Download Link：https://pan.baidu.com/s/13XT8xLnwFH13dMU89vkUEQ Password：a6pc 
