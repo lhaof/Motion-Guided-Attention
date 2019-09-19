@@ -15,7 +15,7 @@ tar -zxvf ViSal-SaliencyMap.tar.gz
 
 3. Download our trained model weights 'MGA_trained.pth'. Download Link：https://pan.baidu.com/s/13XT8xLnwFH13dMU89vkUEQ Password：a6pc Place 'MGA_trained.pth' under the same directory as 'inference.py'. Then try:
 ```
-python inference.pth
+python inference.py
 ```
 The above command should generates a new directory named './results'. The command should also predict a saliency map, since we have put an input sample in './dataset'.
 
