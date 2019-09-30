@@ -1,6 +1,6 @@
 # MGA: Motion Guided Attention for Video Salient Object Detection, ICCV 2019
 <p align="center">
-  <img src="CASI_sample.png" width="700" title="CASI_sample">
+  <img src="MGA_results.png" width="700" title="MGA_results">
 </p>
 
 0. If you want to compare with our method, a simple way is to download the \*.tar.gz files. These tar.gz files contain saliency maps predicted by our method without any post-processing like CRF. You could evaluate these saliency maps with your own evaluation code. It is suggested to uncompress them on Ubuntu:
