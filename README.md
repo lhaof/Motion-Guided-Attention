@@ -24,4 +24,12 @@ The above command should generates a new directory named './results'. The comman
 
 4. If you want to train our method from scratch, please read the proposed multi-task training scheme in our paper https://arxiv.org/pdf/1909.07061 carefully. And then implement your own training code. If you feel this repository helpful, please cite our paper.
 
-Please email me via lhaof@foxmail.com, if you need helps.
+Please email me via lhaof@foxmail.com, if you need helps. If you feel this repository helpful, please cite the following paper
+```
+@inproceedings{li2019motion,
+	title={Motion Guided Attention for Video Salient Object Detection},
+	author={Li, Haofeng and Chen, Guanqi and Li, Guanbin and Yu Yizhou},
+	booktitle={Proceedings of International Conference on Computer Vision},
+	year={2019}
+}
+```
