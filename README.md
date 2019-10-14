@@ -33,3 +33,24 @@ Please email me via lhaof@foxmail.com, if you need helps. If you feel this repos
 	year={2019}
 }
 ```
+
+5. Q&A
+Q: missing key:  bn1.num_batches_tracked
+A: The keys with 'num_batches_tracked' can be ignored.
+```
+def load_pretrain_model(net, model_path):
+    net_keys = list(net.state_dict().keys())
+    model = torch.load(model_path)
+    model_keys = list(model.keys())
+    # clean keys
+    model_keys = [key for key in model_keys if not key.endswith('num_batches_tracked')]
+    i = 0
+    while i < len(model_keys):
+        model_key_i = model_keys[i]
+        net_key_i = net_keys[i]
+        assert net.state_dict()[net_key_i].shape == model[model_key_i].shape, ('{}.shape: {}, {}.shape: {}'.format(net_key_i, net.state_dict()[net_key_i].shape, model_key_i, model[model_key_i].shape))
+        net.state_dict()[net_key_i].copy_(model[model_key_i].cpu())
+        i += 1
+    return net
+
+```
