@@ -35,8 +35,10 @@ Please email me via lhaof@foxmail.com, if you need helps. If you feel this repos
 ```
 
 5. Q&A
+
 Q: missing key:  bn1.num_batches_tracked
-A: The keys with 'num_batches_tracked' can be ignored.
+
+A: The keys with 'num_batches_tracked' can be ignored. See the following code.
 ```
 def load_pretrain_model(net, model_path):
     net_keys = list(net.state_dict().keys())
