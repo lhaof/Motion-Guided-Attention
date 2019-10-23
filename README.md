@@ -16,7 +16,7 @@ tar -zxvf ViSal-SaliencyMap.tar.gz
 
 2. Have a look at the directory './dataset', and you will know how the data is organized. Create new sub-directory for your own dataset, and place RGB images and visualized optical flows under the corresponding directory. You may also read and modify 'dataloaders' according to how you organize the data.
 
-3. Download our trained model weights 'MGA_trained.pth'. Download Link：https://pan.baidu.com/s/13XT8xLnwFH13dMU89vkUEQ Password：a6pc Place 'MGA_trained.pth' under the same directory as 'inference.py'. Then try:
+3. Download our trained model weights 'MGA_trained.pth'. Google Download Link: https://drive.google.com/file/d/1tuG_S5nIAEfigKNPPsOo7SG-iIWo3T4N/view?usp=sharing Baidu Download Link：https://pan.baidu.com/s/13XT8xLnwFH13dMU89vkUEQ Password：a6pc Place 'MGA_trained.pth' under the same directory as 'inference.py'. Then try:
 ```
 python inference.py
 ```
