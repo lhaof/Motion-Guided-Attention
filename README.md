@@ -3,6 +3,9 @@
   <img src="MGA_results.png" width="1000" title="MGA_results">
 </p>
 
+-1. If you need the results of MGA (without CRF) tested on DAVSOD, please download them from https://pan.baidu.com/s/1mv7mi_0XS3W237tAH2gNgg 
+password：9lm7
+
 0. If you want to compare with our method, a simple way is to download the \*.tar.gz files. These tar.gz files contain saliency maps predicted by our method without any post-processing like CRF. You could evaluate these saliency maps with your own evaluation code. It is suggested to uncompress them on Ubuntu:
 ```
 cat DAVIS-SaliencyMap.tar.gz* | tar -xzf -
