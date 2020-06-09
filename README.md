@@ -3,8 +3,7 @@
   <img src="MGA_results.png" width="1000" title="MGA_results">
 </p>
 
--1. If you need the results of MGA (without CRF) tested on DAVSOD, please download them from https://pan.baidu.com/s/1mv7mi_0XS3W237tAH2gNgg 
-password：9lm7
+News: I am recruiting RAs and visiting students. They are supposed to work with me in Shenzhen Research Institute of Big Data, CUHK(SZ). I will help them publish their first-author paper in the field of medical image analysis and computer vision. Feel free to email me via lhaof@foxmail.com
 
 0. If you want to compare with our method, a simple way is to download the \*.tar.gz files. These tar.gz files contain saliency maps predicted by our method without any post-processing like CRF. You could evaluate these saliency maps with your own evaluation code. It is suggested to uncompress them on Ubuntu:
 ```
@@ -12,6 +11,8 @@ cat DAVIS-SaliencyMap.tar.gz* | tar -xzf -
 tar -zxvf FBMS-SaliencyMap.tar.gz 
 tar -zxvf ViSal-SaliencyMap.tar.gz
 ```
+If you need the results of MGA (without CRF) tested on DAVSOD, please download them from https://pan.baidu.com/s/1mv7mi_0XS3W237tAH2gNgg 
+password：9lm7 
 
 1. If you want to run our trained MGA network, first, you need to correctly install FlowNet 2.0. The performance of our method could be affected by the quality of optical flow images. Notice that FlowNet 2.0 contains many variants, please choose the one with the highest accuracy. It is suggested to use the implementation by NVIDIA: https://github.com/NVIDIA/flownet2-pytorch. To run this FlowNet 2.0, it is good to use Python 3.6. To run our trained model, it is better to use Python 2 & Pytorch 0.4.0/0.4.1.
 
