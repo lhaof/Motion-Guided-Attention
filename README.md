@@ -3,8 +3,6 @@
   <img src="MGA_results.png" width="1000" title="MGA_results">
 </p>
 
-<b>News: I am recruiting visiting students. They are supposed to work with me in Shenzhen Research Institute of Big Data, CUHK(SZ). I will help them publish their first-author paper in the field of medical image analysis and computer vision. Feel free to email me via lhaof@foxmail.com (my homepage: https://lhaof.github.io/)</b>
-
 0. If you want to compare with our method, a simple way is to download the \*.tar.gz files. These tar.gz files contain saliency maps predicted by our method without any post-processing like CRF. You could evaluate these saliency maps with your own evaluation code. It is suggested to uncompress them on Ubuntu:
 ```
 cat DAVIS-SaliencyMap.tar.gz* | tar -xzf -
